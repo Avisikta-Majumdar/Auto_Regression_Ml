@@ -14,11 +14,12 @@ def data():
     if request.method=="POST":
         f = request.files["csvfile"]
         data = pd.read_csv(f)
+        y = data.iloc[:, -1]
         x = data.iloc[:, :-1]
         y = data.iloc[:, -1]
         x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.4, random_state=0)
         algoritm = request.form["select an algoritm"]
-        if algoritm == "linear regression":
+        if algoritm == "Linear Regression":
 
             from sklearn.linear_model import LinearRegression
             lr = LinearRegression()
@@ -26,9 +27,9 @@ def data():
             y_pred = lr.predict(x_test)
             from sklearn.metrics import r2_score
             c = r2_score(y_test, y_pred)
-            return render_template("final.html", data=c)
+            return render_template("final.html", data=round(c,2)*100 )
 
-        if algoritm == "decision tree regressor":
+        if algoritm == "Decision Tree Regressor":
 
 
             from sklearn.tree import DecisionTreeRegressor
@@ -38,15 +39,15 @@ def data():
             y_pred = regressor.predict(x_test)
             from sklearn.metrics import r2_score
             c = r2_score(y_test, y_pred)
-            return render_template("final.html", data=c)
-        if algoritm == "random forest regressor":
+            return render_template("final.html", data=round(c,2)*100 )
+        if algoritm == "Random Forest Regressor":
             from sklearn.ensemble import RandomForestRegressor
             regressor = RandomForestRegressor(n_estimators=100, random_state=0)
             regressor.fit(x_train, y_train)
             y_pred = regressor.predict(x_test)
             from sklearn.metrics import r2_score
             c = r2_score(y_test, y_pred)
-            return render_template("final.html", data=c)
+            return render_template("final.html", data=round(c,2)*100 )
 
 if __name__=="__main__":
     app.run(debug=True)
