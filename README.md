@@ -2,6 +2,7 @@
 
 
 ![ML](https://img.shields.io/badge/ML-Regression-blue.svg) 
+![AlgoUsed](https://img.shields.io/badge/ML-LinearRegression-green.svg)
 
 ## Project Objectives :
 The objective of the project is to create a machine learning model. We are doing a supervised learning and our aim is to do get the accuracy score.
