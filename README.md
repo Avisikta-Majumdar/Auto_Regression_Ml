@@ -7,8 +7,7 @@
 The objective of the project is to create a machine learning model. We are doing a supervised learning and our aim is to do get the accuracy score.
 
 ## Data :
-User have to give the data to check accuracy & the data should be clean and don't have catagorical column 
-
+Users have to give the data to check accuracy & the data should be clean and don't have a categorical column.
 
 ## Modelling :
 The analysis and model creation can be found in the app.py file. 
@@ -24,5 +23,6 @@ Link: https://auto-ml-regression.herokuapp.com/
 
 ![ML](Screenshot/GIF.gif)
 ## Future Scope :
-* Use multiple Algorithms
-* Update the Front-End 
+* 1)Use multiple Algorithms
+* 2)Update the Front-End 
+
