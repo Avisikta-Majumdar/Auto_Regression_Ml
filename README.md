@@ -4,12 +4,9 @@
 ![ML](https://img.shields.io/badge/ML-Regression-blue.svg) 
 <br>
 ![AlgoUsed](https://img.shields.io/badge/ML-LinearRegression-green.svg)
-{
-  "schemaVersion": 1,
-  "label": "Algo-Used",
-  "message": "Decision Tree Regression",
-  "color": "orange"
-}
+![AlgoUsed](https://img.shields.io/badge/ML-DecisionTreeRegression-green.svg)
+![AlgoUsed](https://img.shields.io/badge/ML-RandomForestRegression-green.svg)
+
 
 ## Project Objectives :
 The objective of the project is to create a machine learning model. We are doing a supervised learning and our aim is to do get the accuracy score.
