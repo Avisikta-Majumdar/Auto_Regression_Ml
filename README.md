@@ -1,7 +1,7 @@
 # Auto_Regression_Ml
 
 
-<center>![ML](https://img.shields.io/badge/ML-Regression-blue.svg) </center>
+![ML](https://img.shields.io/badge/ML-Regression-blue.svg)
 <br>
 ![AlgoUsed](https://img.shields.io/badge/ML-LinearRegression-green.svg)
 ![AlgoUsed](https://img.shields.io/badge/ML-DecisionTreeRegression-green.svg)
