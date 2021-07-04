@@ -14,7 +14,7 @@ The analysis and model creation can be found in the app.py file.
 
 The main packages used are pandas , flask and sklearn .  
 
-## Deployemnt :
+## Deployement :
 The web app has been build using basic HTML, CSS, Flask and Herkou.
 
 Link: https://auto-ml-regression.herokuapp.com/
